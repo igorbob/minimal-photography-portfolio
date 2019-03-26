@@ -94,7 +94,7 @@ function buildNavigation() {
 function makeActive(pageId) {
     current = document.getElementById(currentlyActivePageId + '_nav');
     if( current ) { current.classList.remove('active') }
-    next = document.getElementById(pageId + '_nav');
+    next = document.getElementById(pageId + '_link');
     if( next ) { next.classList.add('active') }
     currentlyActivePageId = pageId;
 }
