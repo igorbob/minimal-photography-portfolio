@@ -23,6 +23,7 @@ var pages = {
     },
     ...
 }
+```
 A page will have an 'id', 'hyperlink', 'href' in order to make a hyperlink in the navigation menu. Images can be added by specifying the image folder path as 'dir', and an array of the sources as 'img_filenames'. 
 Make sure the path and the image file names are matching the actual folders and file names.
 
