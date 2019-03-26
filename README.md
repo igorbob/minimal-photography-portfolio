@@ -40,7 +40,7 @@ The about page text sits in index.html and is only shown when the about class is
 
 ## Deployment
 
-It's just plain javascript + html so can be hosted directly. For example I used Google's firebase, a live version of this example can be found * [here](https://simple-photo-album.firebaseapp.com/).
+It's just plain javascript + html so can be hosted directly. For example I used Google's firebase. A live version of this example can be found * [here](https://simple-photo-album.firebaseapp.com/).
 
 ## Built With
 
