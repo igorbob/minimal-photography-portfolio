@@ -1,6 +1,6 @@
 # Horizontal picture portfolio
 
-Minimal, lightweight, easy to edit template for a horizontally scrolling picture portfolio. Just host  
+Minimal, lightweight, easy to edit template for a horizontally scrolling picture portfolio. Add your own pictures and host it somewhere (as on firebase like * [here](https://simple-photo-album.firebaseapp.com/) ).
 
 ## Editing the template
 
