@@ -7,14 +7,13 @@ var currentlyActivePageId = null;
 
 var pages = {
     'home': {
-      'id' : null,
       'href' : "/",
       'dir' : "img/",
       'img_files' : ['00.jpg']
     },
     'page_one' : {
       'id' : "page_one",
-      'link' : "a page",
+      'hyperlink' : "a page",
       'title' : "title of a page",
       'href' : "/page_one",
       'dir' : "img/page_one/",
@@ -22,7 +21,7 @@ var pages = {
     },
     'page_two' : {
       'id' : "page_two",
-      'link' : "another one",
+      'hyperlink' : "another one",
       'title' : "another title",
       'href' : "/friends",
       'dir' : "img/friends/",
@@ -30,7 +29,7 @@ var pages = {
     },
     'about' : {
       'id' : "about",
-      'link' : "about",
+      'hyperlink' : "about",
       'href' : "/about"
     },
     'page_not_found' : {
@@ -79,13 +78,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
 function buildNavigation() {
   nav = document.getElementById('nav');
   for ( p in pages ) {
-    if( pages[p].link ) {
-      link = document.createElement('A');
-      link.href = pages[p].href;
-      link.appendChild(document.createTextNode(pages[p].link));
+    if( pages[p].hyperlink ) {
+      hyperlink = document.createElement('A');
+      hyperlink.href = pages[p].href;
+      hyperlink.appendChild(document.createTextNode(pages[p].hyperlink));
       menu_item = document.createElement('DIV');
       menu_item.id = pages[p].id + '_link' ;
-      menu_item.appendChild(link);
+      menu_item.appendChild(hyperlink);
       nav.appendChild(menu_item)
     }
   }
@@ -93,9 +92,9 @@ function buildNavigation() {
 
 // handles the 'active' class on the menu items in the navigation sidebar
 function makeActive(pageId) {
-    current = document.getElementById(currentlyActivePageId + '_link');
+    current = document.getElementById(currentlyActivePageId + '_nav');
     if( current ) { current.classList.remove('active') }
-    next = document.getElementById(pageId + '_link');
+    next = document.getElementById(pageId + '_nav');
     if( next ) { next.classList.add('active') }
     currentlyActivePageId = pageId;
 }
